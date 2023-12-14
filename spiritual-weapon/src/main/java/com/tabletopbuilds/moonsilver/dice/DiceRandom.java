@@ -18,7 +18,7 @@ public final class DiceRandom {
     public static DieRollResult d(int size) {
         Preconditions.checkArgument(size > 0, "Die size must be positive integer");
 
-        return new DieRollResult(random.nextInt(20) + 1, size);
+        return new DieRollResult(random.nextInt(size) + 1, size);
     }
 
 
